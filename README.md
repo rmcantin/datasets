@@ -2,31 +2,39 @@
 
 ## Zaragoza contamination
 
-## Wine Quality - Red (UCI) https://archive-beta.ics.uci.edu/dataset/186/wine+quality
+Station Location and contaminant data. Based on Zaragoza open data.
+
+## Wine Quality - Red (UCI)
+
+https://archive-beta.ics.uci.edu/dataset/186/wine+quality
 
 Regression - 11 continuous features
 
 ```
 import pandas as pd
-df = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", sep=";")
+df = pd.read_csv("https://raw.githubusercontent.com/rmcantin/datasets/refs/heads/main/concrete.csv", sep=";")
 
 X = df.drop(columns=["quality"])
 y = df["quality]"
 ```
 
-## Concrete Compressive Strength (UCI) https://archive-beta.ics.uci.edu/dataset/165/concrete+compressive+strength
+## Concrete Compressive Strength (UCI)
 
-Regression - 11 continous features
+https://archive-beta.ics.uci.edu/dataset/165/concrete+compressive+strength
+
+Regression - 8 continous features
 
 ```
-url = "https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/concrete.csv"
-df = pd.read_csv(url)
+import pandas as pd
+
+df = pd.read_csv(https://raw.githubusercontent.com/rmcantin/datasets/refs/heads/main/concrete.csv)
 
 X = df.drop(columns=["strength"])
 y = df["strength"]
 ```
 
-# Weight Data - by Philipp Hennig
+## Weight Data - by Philipp Hennig
+
 https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/lehre/probabilistic-machine-learning/
 
 ```
