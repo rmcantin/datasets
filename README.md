@@ -33,6 +33,21 @@ X = df.drop(columns=["strength"])
 y = df["strength"]
 ```
 
+## Year Prediction - Million Songs Database (UCI)
+
+https://samyzaf.com/ML/song_year/song_year.html
+
+Regression - 90 features
+
+```
+import pandas as pd
+
+data = pd.read_csv('https://raw.githubusercontent.com/rmcantin/datasets/refs/heads/main/YearPredictionMSD.csv')
+
+X = data.to_numpy()[:,1:]
+y = data.to_numpy()[:,0]
+```
+
 ## Weight Data - by Philipp Hennig
 
 https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/lehre/probabilistic-machine-learning/
